@@ -35,4 +35,4 @@ dev.copy(png, file = "plot4.png")
 dev.off()
 
 #reset to previous setting
-par(op)
+#par(op)

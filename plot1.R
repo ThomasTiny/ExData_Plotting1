@@ -8,4 +8,4 @@ plot(x <- hist(as.numeric(sub_z[,2])), xlab = "Global Active Power (kilowatts)",
 dev.copy(png, file = "plot1.png")
 dev.off()
 #reset to previous setting
-par(op)
+#par(op)
