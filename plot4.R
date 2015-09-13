@@ -2,10 +2,10 @@ library(lubridate)
 library(zoo)
 
 #plot setting:
-# 1 row 1 column
+# 2 row 2 column
 # square plotting region
 par(mar=c(4,4,2,2), mfrow=c(2,2), pty = "s", cex='0.6')
-#z <- read.zoo("household_power_consumption.txt", sep=";", header=TRUE, format = "%d/%m/%Y")
+z <- read.zoo("household_power_consumption.txt", sep=";", header=TRUE, format = "%d/%m/%Y")
 sub_z <- window(z, start = "2007-02-01", end = "2007-02-02")
 dateTime <- ymd_hms(paste(index(sub_z[,1]), sub_z[,1]))
 
